@@ -48,8 +48,9 @@
 #contact {
   > :nth-child(n) {
     display: flex;
-    padding-top: 9px;
+    // padding-top: 9px;
     margin: 0;
+    margin-top: 9px;
   }
   // > :first-child {
   //   display: flex;
@@ -70,6 +71,9 @@
 }
 .contact__company {
   width: 100%;
+}
+.footer__element > :first-child {
+  margin-block-start: 10px;
 }
 
 .newsletter-form {
