@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.body__container {
+  font-family: "Roboto", sans-serif;
+  color: $color-normal;
+  font-weight: 400;
+  font-size: 14px;
+  position: relative;
+  min-width: $display-smallest;
+  width: 100vw;
+}
+body {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+
+  padding: 0;
+  margin: 0;
+  // overflow: hidden;
+  min-width: $display-smallest;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  max-width: $display-large;
+  margin: 0px auto;
+}
+.section {
+  padding: 94px 0 94px 0;
+}

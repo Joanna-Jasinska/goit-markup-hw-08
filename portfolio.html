@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
+    <!-- <link href="./css/style.css" rel="stylesheet" /> -->
+    <!-- <link href="./css/style-BEM.css" rel="stylesheet" /> -->
+    <link href="./css/main.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+  </head>
+  <body>
+    <div id="mobile-menu" class="mobile-menu is-hidden" data-mobile-menu>
+      <button
+      class="cursor-pointer has-hover mobile-menu-close-btn"
+      type="button"
+      value="Zamknij okno"
+      data-mobile-menu-close
+    >
+      <svg class="mobile_menu_hover" width="5vw" height="5vw" margin="auto">
+        <use href="./images/icons.svg#X"></use>
+      </svg>
+    </button>
+      <nav class="flex-column-left">
+        <a class="header__link current-page" href="./index.html">Agencja</a>
+        <a class="header__link" href="./portfolio.html">Portfolio</a>
+        <a class="header__link" href="#contact">Kontakt</a>
+      </nav>
+
+      <div class="mobile-menu-footer">
+        <nav class="flex-column-left">
+          <a class="header__link accented-color" href="tel:+48111111111">+48 111 111 111</a>
+          <a class="header__link normal-color" href="mailto:info@example.com">info@example.com</a>
+
+          <div class="flex-lined-left mobile-menu-footer__media">
+          <a class="mobile-menu-footer__link" href="example.com">Instagram</a>|
+          <a class="mobile-menu-footer__link" href="example.com">Twitter</a>|
+          <a class="mobile-menu-footer__link" href="example.com">Facebook</a>|
+          <a class="mobile-menu-footer__link" href="example.com">Linkedin</a>
+          </div>
+        </nav>
+      </div>
+
+      </div>
+    </div>
+    <div class="body__container">
+      <header class="container flex-lined-space-between header">
+
+        <h2 class="company-name">
+          <span class="accented-color">Web</span
+          ><span class="strong-color">Studio</span>
+        </h2>
+        <!-- <a
+          class="flex-lined-left page-link"
+
+          href="https://joanna-jasinska.github.io/goit-markup-hw-06/"
+
+        >
+        </a> -->
+
+        <div class="header__info_links">
+        <nav class="flex-lined-space-between navigation">
+          <a class="header__link current-page" href="./index.html">Agencja</a>
+          <a class="header__link" href="./portfolio.html">Portfolio</a>
+          <a class="header__link" href="#contact">Kontakt</a>
+        </nav>
+      </div>
+
+        <div class="header__flex-right header__contact_links">
+          <a class="header__link" href="mailto:info@example.com"
+            ><svg class="icon header__contact_links__icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@example.com</a
+          >
+
+          <a class="header__link" href="tel:+48111111111">
+            <svg class="icon header__contact_links__icon" width="16" height="12">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +48 111 111 111</a
+          >
+        </div>
+        <div class="header__flex-right header__mobile_menu_open">
+          <button
+          class=" has-hover"
+          type="button"
+          value="Otwórz menu"
+          data-mobile-menu-open
+          >
+          <h2 class="company-name">V</h2>
+        </button>
+        </div>
+      </header>
+      <main class="section">
+        <ul class="list-filter flex-lined-middle-center section__title">
+          <li>
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Wszystkie"
+            >
+              Wszystkie
+            </button>
+          </li>
+          <li>
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Strony"
+            >
+              Strony
+            </button>
+          </li>
+          <li>
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Aplikacje"
+            >
+              Aplikacje
+            </button>
+          </li>
+          <li>
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Dizajn"
+            >
+              Dizajn
+            </button>
+          </li>
+          <li>
+            <button
+              class="button--product-filtering has-hover"
+              type="button"
+              value="Marketing"
+            >
+              Marketing
+            </button>
+          </li>
+        </ul>
+
+        <ul class="container product-list flex-wrap-space-around">
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-tablet-img-8.jpg"
+                  alt="tablet with web page opened"
+                  width="370"
+                  height="294"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Technocrack</h3>
+                Strona internetowa
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-basketball-img-7.jpg"
+                  alt="two men in professional sportswear are jumping to reach basketball ball"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">
+                  Grafika New Orlean vs Golden Star
+                </h3>
+                Dizajn
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-seafood-img-6.jpg"
+                  alt="The Seafood Restaurant est. 2001 logo with a fish on the background"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Restauracja Seafood</h3>
+                Aplikacja
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-headphones-img-5.jpg"
+                  alt="comfortable black headphoes"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Porjekt Prime</h3>
+                Marketing
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-boxes-img-4.jpg"
+                  alt="two cardboard boxes ready to be shipped"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Projekt Boxes</h3>
+                Aplikacja
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-monitor-img-3.jpg"
+                  alt="monitor, on screen displaying world map and article titled 'inspiration has no borders'"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">
+                  Inspiration has no Borders
+                </h3>
+                Strona Internetowa
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-book-img-2.jpg"
+                  alt="magazine opened on a page with woman drying hair"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">
+                  Magazyn Limited Edition
+                </h3>
+                Dizajn
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-lab-tag-img-1.jpg"
+                  alt="a sturdy paper tag with a string attatched, text on the tag: LABEL TAG PSD Mockup"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Projekt LAB</h3>
+                Marketing
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="product-card has-hover">
+              <div class="slider-container has-hover">
+                <img
+                  src="./images/portfolio-laptop-img.jpg"
+                  alt="hands working on laptop with article 'growing business' on the screen"
+                />
+                <article class="slide-from-bottom">
+                  Technocrack jest popularną platformą wykorzystywaną do
+                  rozpowszechniania koronawirusa. Firmy wykorzystują tę
+                  platformę do celów szpiegowskich i ataków na niezabezpieczone
+                  serwery konkurencji
+                </article>
+              </div>
+              <div class="product-card__text-section">
+                <h3 class="product-card__product-name">Growing Business</h3>
+                Aplikacja
+              </div>
+            </section>
+          </li>
+        </ul>
+      </main>
+      <footer class="footer">
+        <div id="contact" class="contact footer__element">
+          <a
+            class="page-link"
+            id="page-link"
+            href="https://joanna-jasinska.github.io/goit-markup-hw-07/"
+          >
+            <h2 class="company-name contact__company">
+              <span class="accented-color">Web</span
+              ><span class="strong-inverted-color">Studio</span>
+            </h2>
+          </a>
+          <address class="text-white contact__address">
+            <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
+          </address>
+          <p>
+            <a class="contact__link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </p>
+          <p>
+            <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
+          </p>
+        </div>
+        <div class="footer__element">
+          <p class="text-white">DOŁĄCZ DO NAS</p>
+          <div class="social-icons">
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse-3"></use>
+            </svg>
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse"></use>
+            </svg>
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse-1"></use>
+            </svg>
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse-2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__element">
+          <form method="get" name="newsletter-form" class="newsletter-form">
+            <label
+              class="newsletter-form__label-email"
+              for="newsletter-form__input-email"
+              >Zapisz się do newslettera</label
+            >
+            <div class="newsletter-form__flex">
+              <input
+                id="newsletter-form__input-email"
+                class="newsletter-form__input-email"
+                type="email"
+                name="newsletter-email"
+                placeholder="E-mail"
+                required
+              />
+
+              <button
+                class="button-default has-hover"
+                type="submit"
+                value="Zapisz się"
+              >
+                <div>Zapisz się</div>
+                <svg class="icon-send" width="24" height="24" margin="auto">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/pagelink.js"></script>
+  </body>
+</html>

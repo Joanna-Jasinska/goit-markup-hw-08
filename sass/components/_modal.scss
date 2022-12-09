@@ -1,0 +1,242 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+
+  left: 0px;
+  top: 0px;
+
+  opacity: 1;
+  scale: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  opacity: inherit;
+  scale: inherit;
+  transform-origin: top left;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-property: scale;
+}
+
+@media screen and (max-width: $display-medium) {
+  .modal{
+    width: 80vw;
+    height: 80vh;
+  }
+}
+
+.message-us-form {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 40px;
+  line-height: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  color: $color-normal;
+  &__title {
+    color: $color-strong;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 2px;
+  }
+
+  &__input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0px 15px 0px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+  &__input:focus,
+  &__textarea:focus {
+    border: 1px solid #2196f3;
+    outline-offset: 2px;
+    outline-color: rgba(33, 33, 33, 0);
+    outline-width: 0px;
+    border-radius: 4px;
+    + label {
+      fill: $color-accented;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+  }
+  &__input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &__input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(117, 117, 117, 0.5);
+    opacity: 1;
+  }
+  &__input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(117, 117, 117, 0.5);
+    opacity: 1;
+  }
+  &__input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &__input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: rgba(117, 117, 117, 0.5);
+}
+.icon-input {
+  &-person {
+    z-index: 1;
+    content: " ";
+    position: relative;
+    visibility: visible;
+    display: flex;
+    left: 12px;
+    top: 14px;
+    cursor: text;
+    &:focus {
+      fill: $color-accented;
+    }
+  }
+
+  &-phone {
+    z-index: 1;
+    content: " ";
+    position: relative;
+    visibility: visible;
+    display: flex;
+    left: 12px;
+    top: 14px;
+    cursor: text;
+  }
+
+  &-email {
+    z-index: 1;
+    content: " ";
+    position: relative;
+    visibility: visible;
+    display: flex;
+    left: 12px;
+    top: 14px;
+    cursor: text;
+    &:focus {
+      fill: $color-accented;
+    }
+  }
+}
+.policy-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: 0 215px;
+  gap: 8px;
+
+  &__label {
+    position: relative;
+  }
+  input:focus + label {
+    fill: $color-accented;
+  }
+  &__link {
+    font-weight: 500;
+    color: $color-accented;
+    /* fill: $color-strong); */
+    /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-property: color, fill, background-color, box-shadow; */
+  }
+
+  &__icon-unchecked {
+    z-index: 1;
+    content: " ";
+    position: absolute;
+    visibility: visible;
+    display: flex;
+    left: -23px;
+    top: 0px;
+    /* background-color: $color-background1); */
+  }
+
+  &__icon-checked {
+    z-index: 2;
+    content: " ";
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    left: -23px;
+    top: 0px;
+    /* background-color: $color-background1); */
+  }
+}
+input:checked + label .policy-checkbox__icon-checked {
+  visibility: visible;
+}
+input:checked + label .policy-checkbox__icon-unchecked {
+  visibility: hidden;
+}
+
+#input-policy-acceptance {
+  appearance: none;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  position: fixed;
+  right: 8px;
+  top: 8px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+#input-policy-acceptance:hover,
+.checkbox-0:hover,
+.checkbox-1:hover {
+  cursor: pointer;
+}

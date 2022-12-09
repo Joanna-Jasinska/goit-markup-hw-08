@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
+    <!-- <link href="./css/style.css" rel="stylesheet" /> -->
+    <!-- <link href="./css/style-BEM.css" rel="stylesheet" /> -->
+    <link href="./css/main.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div id="mobile-menu" class="mobile-menu is-hidden" data-mobile-menu>
+      <button
+      class="cursor-pointer has-hover mobile-menu-close-btn"
+      type="button"
+      value="Zamknij okno"
+      data-mobile-menu-close
+    >
+      <svg class="mobile_menu_hover" width="5vw" height="5vw" margin="auto">
+        <use href="./images/icons.svg#X"></use>
+      </svg>
+    </button>
+      <nav class="flex-column-left">
+        <a class="header__link current-page" href="./index.html">Agencja</a>
+        <a class="header__link" href="./portfolio.html">Portfolio</a>
+        <a class="header__link" href="#contact">Kontakt</a>
+      </nav>
+
+      <div class="mobile-menu-footer">
+        <nav class="flex-column-left">
+          <a class="header__link accented-color" href="tel:+48111111111">+48 111 111 111</a>
+          <a class="header__link normal-color" href="mailto:info@example.com">info@example.com</a>
+
+          <div class="flex-lined-left mobile-menu-footer__media">
+          <a class="mobile-menu-footer__link" href="example.com">Instagram</a>|
+          <a class="mobile-menu-footer__link" href="example.com">Twitter</a>|
+          <a class="mobile-menu-footer__link" href="example.com">Facebook</a>|
+          <a class="mobile-menu-footer__link" href="example.com">Linkedin</a>
+          </div>
+        </nav>
+      </div>
+
+      </div>
+    </div>
+
+    <div class="body__container">
+      <header class="container flex-lined-space-between header">
+
+        <h2 class="company-name">
+          <span class="accented-color">Web</span
+          ><span class="strong-color">Studio</span>
+        </h2>
+        <!-- <a
+          class="flex-lined-left page-link"
+
+          href="https://joanna-jasinska.github.io/goit-markup-hw-06/"
+
+        >
+        </a> -->
+
+        <div class="header__info_links">
+        <nav class="flex-lined-space-between navigation">
+          <a class="header__link current-page" href="./index.html">Agencja</a>
+          <a class="header__link" href="./portfolio.html">Portfolio</a>
+          <a class="header__link" href="#contact">Kontakt</a>
+        </nav>
+      </div>
+
+        <div class="header__flex-right header__contact_links">
+          <a class="header__link" href="mailto:info@example.com"
+            ><svg class="icon header__contact_links__icon" width="16" height="12">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+            info@example.com</a
+          >
+
+          <a class="header__link" href="tel:+48111111111">
+            <svg class="icon header__contact_links__icon" width="16" height="12">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
+            +48 111 111 111</a
+          >
+        </div>
+        <div class="header__flex-right header__mobile_menu_open">
+          <button
+          class=" has-hover"
+          type="button"
+          value="Otwórz menu"
+          data-mobile-menu-open
+          >
+          <h2 class="company-name">V</h2>
+        </button>
+        </div>
+      </header>
+      <main>
+        <section class="banner-huge flex-column-centered" id="agency">
+          <h1 class="banner-huge__slogan">
+            EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
+          </h1>
+
+          <button
+            class="button-default has-hover banner-huge__button"
+            type="button"
+            value="Zamów usługę"
+            data-modal-open
+          >
+            Zamów usługę
+          </button>
+        </section>
+
+        <section class="article-white section" id="portfolio">
+          <ul class="container flex-wrap-space-around mini-articles">
+            <li>
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
+                  <use href="./images/icons.svg#antenna-1"></use>
+                </svg>
+              </div>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcusem. Sed non sodales dui. Interdum et malesuada
+            </li>
+            <li>
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
+                  <use href="./images/icons.svg#clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcusem. Sed non sodales dui. Interdum et malesuada
+            </li>
+            <li>
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
+                  <use href="./images/icons.svg#diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcusem. Sed non sodales dui. Interdum et malesuada
+            </li>
+            <li>
+              <div class="mini-articles__icon-background">
+                <svg class="mini-articles__icon" height="70">
+                  <use href="./images/icons.svg#astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="mini-articles__title">LOREM IPSUM</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcusem. Sed non sodales dui. Interdum et malesuada
+            </li>
+          </ul>
+          <section class="what-we-do">
+            <h2 class="what-we-do__title flex-column-centered">
+              Czym się zajmujemy
+            </h2>
+
+            <ul class="container flex-wrap-space-around">
+              <li class="what-we-do__card">
+                <img
+                  src="./images/img-code.jpg"
+                  alt="Writing codes and algorhitms"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-inside-image-bottom">
+                  Aplikacje komputerowe
+                </div>
+              </li>
+              <li class="what-we-do__card">
+                <img
+                  src="./images/img-app.jpg"
+                  alt="Working on smartphone apps"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-inside-image-bottom">Aplikacje mobilne</div>
+              </li>
+              <li class="what-we-do__card">
+                <img
+                  src="./images/img-tab.jpg"
+                  alt="Working with color palette on a tablet"
+                  width="370"
+                  height="294"
+                />
+                <div class="desc-inside-image-bottom">
+                  Rozwiązania graficzne
+                </div>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section class="article-gray section">
+          <h2 class="flex-column-centered section__title">Nasz zespół</h2>
+
+          <ul class="container flex-wrap-space-around">
+            <li class="personel-card flex-column-centered">
+              <img
+                src="./images/portrait1.jpg"
+                alt="Portrait of John Doe, smiling man"
+                width="270"
+                height="260"
+              />
+              <section class="personel-card__text-section">
+                <h4 class="personel-card__name">John Doe</h4>
+                Product Designer
+                <div class="social-icons">
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-3"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-1"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-2"></use>
+                  </svg>
+                </div>
+              </section>
+            </li>
+            <li class="personel-card flex-column-centered">
+              <img
+                src="./images/portrait2.jpg"
+                alt="Portrait of John Doe, smiling woman"
+                width="270"
+                height="260"
+              />
+              <section class="personel-card__text-section">
+                <h4 class="personel-card__name">John Doe</h4>
+                Frontend Developer
+                <div class="social-icons">
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-3"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-1"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-2"></use>
+                  </svg>
+                </div>
+              </section>
+            </li>
+            <li class="personel-card flex-column-centered">
+              <img
+                src="./images/portrait3.jpg"
+                alt="Portrait of John Doe, smiling man"
+                width="270"
+                height="260"
+              />
+              <section class="personel-card__text-section">
+                <h4 class="personel-card__name">John Doe</h4>
+                Marketing
+                <div class="social-icons">
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-3"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-1"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-2"></use>
+                  </svg>
+                </div>
+              </section>
+            </li>
+            <li class="personel-card flex-column-centered">
+              <img
+                src="./images/portrait4.jpg"
+                alt="Portrait of John Doe, smiling man"
+                width="270"
+                height="260"
+              />
+
+              <section class="personel-card__text-section">
+                <h4 class="personel-card__name">John Doe</h4>
+                UI Designer
+                <div class="social-icons">
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-3"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-1"></use>
+                  </svg>
+                  <svg
+                    class="social-icons__icon has-hover"
+                    width="44"
+                    height="44"
+                  >
+                    <use href="./images/icons.svg#Ellipse-2"></use>
+                  </svg>
+                </div>
+              </section>
+            </li>
+          </ul>
+        </section>
+
+        <section class="article-white section">
+          <h2 class="flex-column-centered section__title">Nasi Klienci</h2>
+
+          <div class="flex-wrap-space-around container">
+            <div class="icon-client has-hover">
+              <svg width="106" height="60">
+                <use href="./images/icons.svg#Logo-1"></use>
+              </svg>
+            </div>
+            <div class="icon-client has-hover">
+              <svg class="i" width="106" height="60">
+                <use href="./images/icons.svg#Logo-2"></use>
+              </svg>
+            </div>
+            <div class="icon-client has-hover">
+              <svg class="i" width="106" height="60">
+                <use href="./images/icons.svg#Logo-3"></use>
+              </svg>
+            </div>
+            <div class="icon-client has-hover">
+              <svg class="i" width="106" height="60">
+                <use href="./images/icons.svg#Logo-4"></use>
+              </svg>
+            </div>
+            <div class="icon-client has-hover">
+              <svg class="i" width="106" height="60">
+                <use href="./images/icons.svg#Logo-5"></use>
+              </svg>
+            </div>
+            <div class="icon-client has-hover">
+              <svg class="i" width="106" height="60">
+                <use href="./images/icons.svg#Logo-6"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div id="contact" class="contact footer__element">
+          <a
+            class="page-link "
+            id="page-link"
+            href="https://joanna-jasinska.github.io/goit-markup-hw-07/"
+          >
+            <h2 class="company-name contact__company">
+              <span class="accented-color">Web</span
+              ><span class="strong-inverted-color">Studio</span>
+            </h2>
+          </a>
+          <address class="text-white contact__address">
+            <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
+          </address>
+          <p>
+            <a class="contact__link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </p>
+          <p>
+            <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
+          </p>
+        </div>
+        <div class="footer__element">
+          <p class="text-white ">DOŁĄCZ DO NAS</p>
+          <div class="social-icons">
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse-3"></use>
+            </svg>
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse"></use>
+            </svg>
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse-1"></use>
+            </svg>
+            <svg
+              class="social-icons__icon social-icons__icon--footer has-hover"
+              width="44"
+              height="44"
+            >
+              <use href="./images/icons.svg#Ellipse-2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__element">
+          <form method="get" name="newsletter-form" class="newsletter-form">
+            <label
+              class="newsletter-form__label-email"
+              for="newsletter-form__input-email"
+              >Zapisz się do newslettera</label
+            >
+            <div class="newsletter-form__flex">
+              <input
+                id="newsletter-form__input-email"
+                class="newsletter-form__input-email"
+                type="email"
+                name="newsletter-email"
+                placeholder="E-mail"
+                required
+              />
+
+              <button
+                class="button-default has-hover"
+                type="submit"
+                value="Zapisz się"
+              >
+                <div>Zapisz się</div>
+                <svg class="icon-send" width="24" height="24" margin="auto">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </footer>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <form method="get" name="signup-form" class="message-us-form">
+            <h2 class="message-us-form__title">
+              Zostaw swoje dane w formularzu poniżej
+            </h2>
+            <div class="flex-column-reverse">
+              <input
+                class="message-us-form__input"
+                id="input-name"
+                type="text"
+                name="name"
+                required
+              />
+              <label class="flex-column-reverse__label" for="input-name"
+                >Imię
+                <svg
+                  class="icon-input-person"
+                  width="18"
+                  height="18"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#person"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="flex-column-reverse">
+              <input
+                class="message-us-form__input"
+                id="input-phone"
+                type="tel"
+                name="tel"
+                required
+              />
+              <label class="flex-column-reverse__label" for="input-phone"
+                >Telefon
+                <svg
+                  class="icon-input-phone"
+                  width="18"
+                  height="18"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="flex-column-reverse">
+              <input
+                class="message-us-form__input"
+                id="input-email"
+                type="email"
+                name="email"
+                required
+              />
+              <label class="flex-column-reverse__label" for="input-email"
+                >Email
+                <svg
+                  class="icon-input-email"
+                  width="18"
+                  height="18"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </label>
+            </div>
+
+            <div class="flex-column-reverse">
+              <textarea
+                class="message-us-form__textarea"
+                id="input-comment"
+                placeholder="Wprowadź tekst"
+                name="comment"
+              ></textarea>
+              <label
+                class="flex-column-reverse__label"
+                class="input-textarea"
+                for="input-comment"
+                >Komentarz</label
+              >
+            </div>
+            <div class="policy-checkbox">
+              <input
+                id="input-policy-acceptance"
+                type="checkbox"
+                name="policy-accepted"
+                required
+              />
+
+              <label
+                class="policy-checkbox__label"
+                for="input-policy-acceptance"
+                >Oświadczam iż akceptuję
+                <a class="policy-checkbox__link" href="">Regulamin</a>
+                i
+                <a class="policy-checkbox__link" href=""
+                  >Politykę Prywatności.</a
+                >
+                <svg
+                  class="policy-checkbox__icon-unchecked"
+                  width="16"
+                  height="15"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#checkbox-background"></use>
+                </svg>
+                <svg
+                  class="policy-checkbox__icon-checked"
+                  width="16"
+                  height="15"
+                  margin="auto"
+                >
+                  <use href="./images/icons.svg#checkbox-checked"></use>
+                </svg>
+              </label>
+            </div>
+            <button
+              class="button-default has-hover"
+              type="submit"
+              value="Wyślij"
+            >
+              Wyślij
+            </button>
+          </form>
+
+          <button
+            class="close-button has-hover"
+            type="button"
+            value="Zamknij okno"
+            data-modal-close
+          >
+            <svg width="12" height="12" margin="auto">
+              <use href="./images/icons.svg#X"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <script src="./js/modal.js"></script>
+    </div>
+
+    <script src="./js/mobile.js"></script>
+    <script src="./js/pagelink.js"></script>
+  </body>
+</html>

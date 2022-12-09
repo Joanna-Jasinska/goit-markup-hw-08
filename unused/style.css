@@ -1,0 +1,137 @@
+:root {
+  --color-accented: #2196f3;
+  --color-accented-light: rgba(33, 150, 255, 1);
+  --color-normal: #757575;
+  --color-gray: #afb1b8;
+  --color-strong: #212121;
+  --color-background1: white;
+  --color-background2: #2f303a;
+  --color-background3: #f5f4fa;
+  --color-footer-icon-bg: rgba(255, 255, 255, 0.1);
+  --color-border1: #eeeeee;
+  --page-link: "https://joanna-jasinska.github.io/goit-markup-hw-07/";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+/* .box-200x50 {
+  min-width: 200px;
+  min-height: 50px;
+}
+.box-200x50:hover {
+  cursor: pointer;
+} */
+
+/* .margin-bottom-20 {
+  margin-bottom: 20px;
+  margin-top: 60px;
+} */
+
+/* .icon {
+  margin-right: 10px;
+} */
+/* .section {
+  padding: 94px 0 94px 0;
+} */
+
+/* .container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+} */
+
+/* .container-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+} */
+/* .container-lined {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+} */
+
+/* .container-lined-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1200px;
+  margin: 0 215px;
+  gap: 8px;
+} */
+/* .container-spaced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 46px;
+} */
+/* .container-right {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: right;
+  gap: 50px;
+} */
+/* .container-left-wrap {
+  text-align: left;
+  width: 1200px;
+  margin-left: 215px;
+  margin-right: 215px;
+  background-color: fuchsia;
+} */
+/* 
+.button1 {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--color-background3);
+  color: var(--color-strong);
+  border-radius: 4px;
+  border: solid var(--color-accented);
+  border-width: 0px;
+} */
+/* .link1 {
+  font-weight: 500;
+  color: var(--color-strong);
+  fill: var(--color-strong);
+}
+
+.button1:hover,
+.button1:focus {
+  background-color: var(--color-accented);
+  color: var(--color-background1);
+  cursor: pointer;
+}
+
+.link1:hover,
+.link1:focus {
+  color: var(--color-accented);
+  fill: var(--color-accented);
+} */
+/* 
+.link2 {
+  font-weight: 500;
+  color: var(--color-strong) 60%;
+} */

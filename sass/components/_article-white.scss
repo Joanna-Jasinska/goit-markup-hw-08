@@ -1,0 +1,89 @@
+.article-white {
+  line-height: 171%;
+}
+
+.mini-articles {
+  margin-bottom: 94px;
+  padding: 5vh;
+  justify-content: space-around;
+  width: 100%;
+  &__title {
+    font-weight: 700;
+    color: $color-strong;
+  }
+  &__icon {
+    margin-top: 25px;
+  }
+  &__icon-background {
+    background-color: #f5f4fa;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+}
+
+.mini-articles li {
+  // flex-basis: 20%;
+  // flex-grow: 1;
+  max-width: 250px;
+}
+
+@media screen and (max-width: $display-small) {
+  .mini-articles li {
+    // flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: $display-medium) {
+}
+
+@media screen and (min-width: $display-large) {
+}
+
+
+.what-we-do {
+  &__title {
+    color: $color-strong;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  &__card {
+    position: relative;
+    line-height: 0px;
+  }
+}
+.desc-inside-image-bottom {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-background1;
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+//second one
+
+.icon-client {
+  fill: $color-normal;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid $color-gray;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // transition-property: color, fill, background-color, box-shadow, border;
+  // transition-duration: 2500ms;
+  &:hover,
+  &:focus {
+    fill: $color-accented;
+    border-color: $color-accented;
+    cursor: pointer;
+  }
+}
