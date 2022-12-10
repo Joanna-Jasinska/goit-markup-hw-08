@@ -133,11 +133,11 @@
     gap: 1vh;
   }
   .newsletter-form__input-email {
-    min-width: 60vw;
+    width: 450px;
   }
 }
 @media screen and (max-width: $display-medium) {
   .newsletter-form__input-email {
-    min-width: 80vw;
+    width: 80vw;
   }
 }

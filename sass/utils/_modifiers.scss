@@ -10,8 +10,8 @@
 .normal-color {
   color: $color-normal;
 }
-.margin-top60-bottom20 {
-}
+// .margin-top60-bottom20 {
+// }
 
 @media screen and (min-width: $display-large) {
   .margin-top60-bottom20 {
@@ -54,7 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  // gap: 30px;
 }
 
 .flex-lined-left {
@@ -65,11 +65,15 @@
 
 .flex-wrap-space-around {
   display: flex;
-  flex-wrap: wrap;
+
   justify-content: space-around;
   gap: 30px;
 }
-
+@media screen and (max-width: calc($display-large + 90px)) {
+  .flex-wrap-space-around {
+    flex-wrap: wrap;
+  }
+}
 .flex-lined-middle-center {
   display: flex;
   align-items: center;

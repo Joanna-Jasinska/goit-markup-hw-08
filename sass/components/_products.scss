@@ -23,6 +23,8 @@
   border-top: 0px;
   position: relative;
   overflow: hidden;
+  // flex-basis: 320px;
+  // flex-grow: 1;
 
   &__text-section {
     border-top: 0px;
@@ -75,4 +77,19 @@
 .slider-container {
   overflow: hidden;
   position: relative;
+}
+
+@media screen and (max-width: $display-small) {
+  .slider-container img {
+    width: 320px;
+  }
+}
+
+.product-list,
+.list-filter {
+  flex-wrap: wrap;
+}
+
+.product-list > li {
+  display: flex;
 }

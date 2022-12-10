@@ -4,5 +4,8 @@
 @media screen and (min-width: $display-medium) {
 }
 
-@media screen and (min-width: $display-large) {
+@media screen and (max-width: $display-large) {
+  .what-we-do {
+    display: none;
+  }
 }

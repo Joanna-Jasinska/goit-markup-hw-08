@@ -14,7 +14,7 @@
 
 .modal {
   width: 528px;
-  height: 581px;
+  max-height: 581px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -36,9 +36,16 @@
 }
 
 @media screen and (max-width: $display-medium) {
-  .modal{
+  .modal {
     width: 80vw;
-    height: 80vh;
+    // max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: $display-small) {
+  .modal {
+    width: 95vw;
+    // max-height: 95vh;
   }
 }
 

@@ -4,7 +4,7 @@
 
 .mini-articles {
   margin-bottom: 94px;
-  padding: 5vh;
+  // padding: 5vh;
   justify-content: space-around;
   width: 100%;
   &__title {
@@ -22,23 +22,22 @@
 }
 
 .mini-articles li {
-  // flex-basis: 20%;
-  // flex-grow: 1;
-  max-width: 250px;
+  flex-basis: calc((1200px - 120px) / 4);
+  // flex-shrink: 100px;
+  // max-width: 250px;
 }
 
-@media screen and (max-width: $display-small) {
-  .mini-articles li {
-    // flex-grow: 1;
-  }
-}
+// @media screen and (max-width: $display-small) {
+//   .mini-articles li {
+//     // flex-grow: 1;
+//   }
+// }
 
 @media screen and (min-width: $display-medium) {
 }
 
 @media screen and (min-width: $display-large) {
 }
-
 
 .what-we-do {
   &__title {
