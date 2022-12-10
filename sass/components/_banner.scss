@@ -21,17 +21,21 @@
     color: $color-background1;
   }
 }
-
-
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner-huge {
+    background-image: url(../images/banner1-background-x2.webp);
+  }
+}
 @media screen and (max-width: $display-medium) {
-  .banner-huge{
+  .banner-huge {
     font-size: x-large;
   }
 }
 
-
 @media screen and (min-width: $display-large) {
-  .banner-huge{
-      min-height: 50vh;
+  .banner-huge {
+    min-height: 50vh;
   }
 }

@@ -849,6 +849,11 @@ input:checked + label .policy-checkbox__icon-unchecked {
   color: white;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .banner-huge {
+    background-image: url(../images/banner1-background-x2.webp);
+  }
+}
 @media screen and (max-width: 768px) {
   .banner-huge {
     font-size: x-large;
