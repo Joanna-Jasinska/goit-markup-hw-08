@@ -30,8 +30,9 @@
   }
   &__flex-right {
     display: flex;
-    flex-basis: 50%;
-    align-items: center;
+    // flex-basis: 50%;
+    // align-items: center;
+    align-items: flex-end;
     justify-content: right;
     gap: 50px;
   }

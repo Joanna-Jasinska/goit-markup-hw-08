@@ -47,13 +47,23 @@ body {
 .container {
   max-width: $display-large;
   margin: 0px auto;
-  padding: 0 15px;
-}
-@media screen and (min-width: $display-large) {
-  .container {
-    padding: 0 0;
-  }
+  // padding: 0px 15px;
 }
 .section {
-  padding: 94px 0 94px 0;
+  padding: 60px 15px;
+}
+@media screen and (min-width: $display-medium) {
+  .container {
+    padding: 0 15px;
+  }
+  .section {
+    padding: 94px 15px;
+    // padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: $display-large) {
+  .section {
+    padding: 94px 0;
+  }
 }

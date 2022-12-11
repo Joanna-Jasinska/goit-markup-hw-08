@@ -3,7 +3,8 @@
 }
 
 .mini-articles {
-  margin-bottom: 94px;
+  // display: flex;
+  margin-bottom: 60px;
   // padding: 5vh;
   justify-content: space-around;
   // width: 100%;
@@ -13,6 +14,7 @@
   }
   &__icon {
     margin-top: 25px;
+    width: 100%;
   }
   &__icon-background {
     background-color: #f5f4fa;
@@ -20,9 +22,16 @@
     margin-bottom: 30px;
   }
 }
+// @media screen and (min-width: $display-medium) {
+//   .mini-articles {
+//     margin-bottom: 94px;
+//   }
+// }
 
 .mini-articles li {
-  width: 270px;
+  flex-basis: 400px;
+  flex-grow: 1;
+  // width: 270px;
   //flex-basis: calc((1200px - 120px) / 4);
   // flex-shrink: 100px;
   // max-width: 250px;
@@ -38,6 +47,9 @@
 }
 
 @media screen and (min-width: $display-large) {
+  .mini-articles {
+    margin-bottom: 94px;
+  }
 }
 
 .what-we-do {

@@ -294,18 +294,25 @@ body {
 .container {
   max-width: 1200px;
   margin: 0px auto;
-  padding: 0 15px;
 }
 
-@media screen and (min-width: 1200px) {
+.section {
+  padding: 60px 15px;
+}
+
+@media screen and (min-width: 768px) {
   .container {
-    padding: 0 0;
+    padding: 0 15px;
+  }
+  .section {
+    padding: 94px 15px;
   }
 }
-.section {
-  padding: 94px 0 94px 0;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
-
 .footer {
   margin: 0px auto;
   padding-top: 30px;
@@ -452,7 +459,6 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px;
-    width: 450px;
   }
   .newsletter-form__input-email {
     width: 450px;
@@ -783,11 +789,9 @@ input:checked + label .policy-checkbox__icon-unchecked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -876,7 +880,7 @@ input:checked + label .policy-checkbox__icon-unchecked {
 }
 
 .mini-articles {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -886,6 +890,7 @@ input:checked + label .policy-checkbox__icon-unchecked {
 }
 .mini-articles__icon {
   margin-top: 25px;
+  width: 100%;
 }
 .mini-articles__icon-background {
   background-color: #f5f4fa;
@@ -894,9 +899,18 @@ input:checked + label .policy-checkbox__icon-unchecked {
 }
 
 .mini-articles li {
-  width: 270px;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
+@media screen and (min-width: 1200px) {
+  .mini-articles {
+    margin-bottom: 94px;
+  }
+}
 .what-we-do__title {
   color: #212121;
   font-weight: 700;
@@ -1063,6 +1077,7 @@ input:checked + label .policy-checkbox__icon-unchecked {
   font-weight: 700;
   font-size: 26px;
   height: 31px;
+  margin: 0 16px 0 16px;
 }
 
 .button-default {
@@ -1186,7 +1201,7 @@ input:checked + label .policy-checkbox__icon-unchecked {
   top: 6vw;
   right: 6vw;
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 50%;
 }
 
@@ -1272,12 +1287,6 @@ input:checked + label .policy-checkbox__icon-unchecked {
   color: #757575;
 }
 
-@media screen and (min-width: 1200px) {
-  .margin-top60-bottom20 {
-    margin-bottom: 20px;
-    margin-top: 60px;
-  }
-}
 .flex-column-reverse {
   width: 100%;
   display: -webkit-box;
@@ -1395,7 +1404,7 @@ input:checked + label .policy-checkbox__icon-unchecked {
   color: #212121;
   font-weight: 700;
   font-size: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .has-hover {
@@ -1416,6 +1425,15 @@ input:checked + label .policy-checkbox__icon-unchecked {
   scale: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .margin-top60-bottom20 {
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  .section__title {
+    margin-bottom: 50px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .what-we-do {
     display: none;
