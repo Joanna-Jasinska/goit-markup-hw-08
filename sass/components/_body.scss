@@ -49,11 +49,11 @@ body {
   margin: 0px auto;
   padding: 0 15px;
 }
-.section {
-  padding: 94px 0 94px 0;
-}
 @media screen and (min-width: $display-large) {
   .container {
     padding: 0 0;
   }
+}
+.section {
+  padding: 94px 0 94px 0;
 }
