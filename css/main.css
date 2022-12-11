@@ -289,8 +289,6 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  max-width: 100vw;
-  height: 100vh;
 }
 
 .container {
@@ -310,6 +308,8 @@ body {
 }
 .footer {
   margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   max-width: 1200px;
   min-height: 252px;
@@ -329,6 +329,11 @@ body {
       flex-flow: wrap;
   font-weight: 700;
 }
+.footer__element {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 150 auto;
+}
 
 footer {
   -webkit-box-pack: center;
@@ -337,18 +342,11 @@ footer {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
-  }
-  .footer__element {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 150 auto;
   }
   .contact__company {
     margin: 0 auto;
@@ -439,7 +437,7 @@ footer {
   margin-top: 0px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .newsletter-form__label-email {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -454,6 +452,7 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px;
+    width: 450px;
   }
   .newsletter-form__input-email {
     width: 450px;

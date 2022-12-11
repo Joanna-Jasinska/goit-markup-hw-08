@@ -1,48 +1,35 @@
 .footer {
   margin: 0px auto;
-  // min-width: 100vw;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 100%;
   max-width: $display-large;
   min-height: 252px;
-  // padding: 5vh;
-  // padding-left: 200px;
-  // padding-right: 200px;
   display: flex;
   // align-items: center;
   justify-content: space-around;
+  // justify-content: center;
   flex-direction: row;
   align-items: flex-start;
   flex-flow: wrap;
-  // gap: 10vh;
 
   font-weight: 700;
+  &__element {
+    // padding-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 150 auto;
+  }
 }
 footer {
   justify-content: center;
   background-color: $color-background2;
 }
 
-// @media screen and (max-width: $display-small) {
-//   .footer {
-//     // column-gap: 1vh;
-//     // row-gap: 1vh;
-//   }
-// }
-
-@media screen and (min-width: $display-large) {
+@media screen and (max-width: $display-large) {
   .footer {
-    // margin-top: 60px;
-    padding-top: 30px;
-    padding-bottom: 30px;
     box-sizing: border-box;
     text-align: center;
-    // row-gap: 1vh;
-    &__element {
-      // padding-top: 60px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      margin: 150 auto;
-    }
   }
   .contact__company {
     margin: 0 auto;
@@ -116,7 +103,7 @@ footer {
     margin-top: 0px;
   }
 }
-@media screen and (max-width: $display-large) {
+@media screen and (min-width: $display-large) {
   .newsletter-form__label-email {
     justify-content: center;
   }
@@ -129,6 +116,7 @@ footer {
   .newsletter-form__flex {
     flex-wrap: wrap;
     gap: 20px; //tutaj
+    width: 450px;
   }
   .newsletter-form__input-email {
     width: 450px;
