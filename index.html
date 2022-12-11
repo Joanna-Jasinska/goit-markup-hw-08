@@ -136,8 +136,8 @@
           </button>
         </section>
 
-        <section class="article-white section" id="portfolio">
-          <ul class="container flex-wrap-space-around mini-articles">
+        <section class="container article-white section" id="portfolio">
+          <ul class="flex-wrap-space-around mini-articles">
             <li>
               <div class="mini-articles__icon-background">
                 <svg class="mini-articles__icon" height="70">
@@ -468,92 +468,96 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
-        <div id="contact" class="contact footer__element">
-          <a
-            class="page-link"
-            id="page-link"
-            href="https://joanna-jasinska.github.io/goit-markup-hw-07/"
-          >
-            <h2 class="company-name contact__company">
-              <span class="accented-color">Web</span
-              ><span class="strong-inverted-color">Studio</span>
-            </h2>
-          </a>
-          <address class="text-white contact__address">
-            <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
-          </address>
-          <p>
-            <a class="contact__link" href="mailto:info@example.com"
-              >info@example.com</a
+      <footer>
+        <div class="footer">
+          <div id="contact" class="contact footer__element">
+            <a
+              class="page-link"
+              id="page-link"
+              href="https://joanna-jasinska.github.io/goit-markup-hw-07/"
             >
-          </p>
-          <p>
-            <a class="contact__link" href="tel:+48111111111">+48 111 111 111</a>
-          </p>
-        </div>
-        <div class="footer__element">
-          <p class="text-white">DOŁĄCZ DO NAS</p>
-          <div class="social-icons">
-            <svg
-              class="social-icons__icon social-icons__icon--footer has-hover"
-              width="44"
-              height="44"
-            >
-              <use href="./images/icons.svg#Ellipse-3"></use>
-            </svg>
-            <svg
-              class="social-icons__icon social-icons__icon--footer has-hover"
-              width="44"
-              height="44"
-            >
-              <use href="./images/icons.svg#Ellipse"></use>
-            </svg>
-            <svg
-              class="social-icons__icon social-icons__icon--footer has-hover"
-              width="44"
-              height="44"
-            >
-              <use href="./images/icons.svg#Ellipse-1"></use>
-            </svg>
-            <svg
-              class="social-icons__icon social-icons__icon--footer has-hover"
-              width="44"
-              height="44"
-            >
-              <use href="./images/icons.svg#Ellipse-2"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="footer__element">
-          <form method="get" name="newsletter-form" class="newsletter-form">
-            <label
-              class="newsletter-form__label-email"
-              for="newsletter-form__input-email"
-              >Zapisz się do newslettera</label
-            >
-            <div class="newsletter-form__flex">
-              <input
-                id="newsletter-form__input-email"
-                class="newsletter-form__input-email"
-                type="email"
-                name="newsletter-email"
-                placeholder="E-mail"
-                required
-              />
-
-              <button
-                class="button-default has-hover"
-                type="submit"
-                value="Zapisz się"
+              <h2 class="company-name contact__company">
+                <span class="accented-color">Web</span
+                ><span class="strong-inverted-color">Studio</span>
+              </h2>
+            </a>
+            <address class="text-white contact__address">
+              <strong> m. Warszawa, Aleje Jerozolimskie 21</strong>
+            </address>
+            <p>
+              <a class="contact__link" href="mailto:info@example.com"
+                >info@example.com</a
               >
-                <div>Zapisz się</div>
-                <svg class="icon-send" width="24" height="24" margin="auto">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
+            </p>
+            <p>
+              <a class="contact__link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </p>
+          </div>
+          <div class="footer__element">
+            <p class="text-white">DOŁĄCZ DO NAS</p>
+            <div class="social-icons">
+              <svg
+                class="social-icons__icon social-icons__icon--footer has-hover"
+                width="44"
+                height="44"
+              >
+                <use href="./images/icons.svg#Ellipse-3"></use>
+              </svg>
+              <svg
+                class="social-icons__icon social-icons__icon--footer has-hover"
+                width="44"
+                height="44"
+              >
+                <use href="./images/icons.svg#Ellipse"></use>
+              </svg>
+              <svg
+                class="social-icons__icon social-icons__icon--footer has-hover"
+                width="44"
+                height="44"
+              >
+                <use href="./images/icons.svg#Ellipse-1"></use>
+              </svg>
+              <svg
+                class="social-icons__icon social-icons__icon--footer has-hover"
+                width="44"
+                height="44"
+              >
+                <use href="./images/icons.svg#Ellipse-2"></use>
+              </svg>
             </div>
-          </form>
+          </div>
+          <div class="footer__element">
+            <form method="get" name="newsletter-form" class="newsletter-form">
+              <label
+                class="newsletter-form__label-email"
+                for="newsletter-form__input-email"
+                >Zapisz się do newslettera</label
+              >
+              <div class="newsletter-form__flex">
+                <input
+                  id="newsletter-form__input-email"
+                  class="newsletter-form__input-email"
+                  type="email"
+                  name="newsletter-email"
+                  placeholder="E-mail"
+                  required
+                />
+
+                <button
+                  class="button-default has-hover"
+                  type="submit"
+                  value="Zapisz się"
+                >
+                  <div>Zapisz się</div>
+                  <svg class="icon-send" width="24" height="24" margin="auto">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </footer>
       <div class="backdrop is-hidden" data-modal>

@@ -296,23 +296,28 @@ body {
 .container {
   max-width: 1200px;
   margin: 0px auto;
+  padding: 0 15px;
 }
 
 .section {
   padding: 94px 0 94px 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 0;
+  }
+}
 .footer {
   margin: 0px auto;
   width: 100%;
+  max-width: 1200px;
   min-height: 252px;
-  padding: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -322,27 +327,23 @@ body {
           align-items: flex-start;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  gap: 10vh;
   font-weight: 700;
+}
+
+footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #2f303a;
 }
 
-@media screen and (max-width: 480px) {
-  .footer {
-    -webkit-column-gap: 1vh;
-       -moz-column-gap: 1vh;
-            column-gap: 1vh;
-    row-gap: 1vh;
-  }
-}
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer {
     padding-top: 30px;
     padding-bottom: 30px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: center;
-    row-gap: 1vh;
   }
   .footer__element {
     padding-top: 30px;
@@ -439,13 +440,20 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .newsletter-form__label-email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
   .newsletter-form {
     padding-top: 0;
   }
   .newsletter-form__flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 1vh;
+    gap: 20px;
   }
   .newsletter-form__input-email {
     width: 450px;
@@ -872,7 +880,6 @@ input:checked + label .policy-checkbox__icon-unchecked {
   margin-bottom: 94px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
 }
 .mini-articles__title {
   font-weight: 700;
@@ -888,8 +895,7 @@ input:checked + label .policy-checkbox__icon-unchecked {
 }
 
 .mini-articles li {
-  -ms-flex-preferred-size: 270px;
-      flex-basis: 270px;
+  width: 270px;
 }
 
 .what-we-do__title {
