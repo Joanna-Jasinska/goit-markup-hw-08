@@ -36,10 +36,10 @@ body {
   // flex-direction: column;
   // align-items: center;
 
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
   // overflow: hidden;
-  min-width: $display-smallest;
+  // min-width: $display-smallest;
   // width: 50vw;
   // max-width: 100vw;
   // height: 100vh;
@@ -47,7 +47,7 @@ body {
 .container {
   max-width: $display-large;
   margin: 0px auto;
-  // padding: 0px 15px;
+  padding: 0px 15px;
 }
 .section {
   padding: 60px 15px;

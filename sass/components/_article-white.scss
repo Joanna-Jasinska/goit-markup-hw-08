@@ -4,7 +4,7 @@
 
 .mini-articles {
   // display: flex;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   // padding: 5vh;
   justify-content: space-around;
   // width: 100%;
@@ -22,11 +22,11 @@
     margin-bottom: 30px;
   }
 }
-// @media screen and (min-width: $display-medium) {
-//   .mini-articles {
-//     margin-bottom: 94px;
-//   }
-// }
+@media screen and (min-width: $display-large) {
+  .mini-articles {
+    margin-bottom: 94px;
+  }
+}
 
 .mini-articles li {
   flex-basis: 400px;
@@ -46,11 +46,11 @@
 @media screen and (min-width: $display-medium) {
 }
 
-@media screen and (min-width: $display-large) {
-  .mini-articles {
-    margin-bottom: 94px;
-  }
-}
+// @media screen and (min-width: $display-large) {
+//   .mini-articles {
+//     margin-bottom: 94px;
+//   }
+// }
 
 .what-we-do {
   &__title {

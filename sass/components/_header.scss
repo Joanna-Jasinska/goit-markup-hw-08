@@ -1,10 +1,18 @@
 .navigation {
   gap: 46px;
+  justify-content: space-between;
+  display: flex;
 }
 
 @media screen and (min-width: $display-small) and (max-width: $display-large) {
   .navigation {
-    gap: 15px;
+    gap: unset;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    // flex-basis: 320px;
+    // flex-grow: 1;
   }
 }
 
@@ -30,8 +38,8 @@
   }
   &__flex-right {
     display: flex;
-    // flex-basis: 50%;
-    // align-items: center;
+    flex-basis: 50%;
+    align-items: center;
     align-items: flex-end;
     justify-content: right;
     gap: 50px;
@@ -40,7 +48,16 @@
 
 @media screen and (min-width: $display-small) and (max-width: $display-large) {
   .header {
-    gap: 15px;
+    gap: unset;
+    &__flex-right {
+      flex-basis: unset;
+      align-items: flex-start;
+    }
+    &__info_links {
+      display: flex;
+      flex-basis: 320px;
+      flex-grow: 1;
+    }
   }
   .header__contact_links {
     flex-flow: column;

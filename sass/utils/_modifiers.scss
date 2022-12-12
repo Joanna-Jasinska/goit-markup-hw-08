@@ -62,7 +62,7 @@
   justify-content: space-around;
   gap: 30px;
 }
-@media screen and (max-width: calc($display-large + 90px)) {
+@media screen and (max-width: $display-large) {
   .flex-wrap-space-around {
     flex-wrap: wrap;
   }
